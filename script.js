@@ -1,3 +1,11 @@
+  const myCarousel = document.querySelector('#heroCarousel')
+  const carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 4000,
+    ride: 'carousel',
+    pause: false
+  })
+
+
 window.addEventListener("scroll", function () {
     const navbar = document.querySelector(".custom-navbar");
     navbar.classList.toggle("scrolled", window.scrollY > 50);
@@ -22,3 +30,4 @@ counters.forEach(counter => {
 
     updateCount();
 });
+
